@@ -1,33 +1,240 @@
 <html>
-    <head>
-        <title>Mi app</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../css/gpr.css">
-    </head>
-    <body>
-        <div class="fila">
-            <div class="columna">
-                <img class="logo" src="../../image/isotipo.png" alt="logo">
-            </div>
-            <div class="columna">
-                <a class="button button_black" href="../../index.html">Home</a>
-                <a class="button button_black button_selected" href="../gestion/gestion_incidentes.html">Gestion de incidentes</a>
-                <a class="button button_black" href="../colaboradores/colaboradores.html">Colaboradores</a>
-                <a class="button button_black" href="../proveedores/proveedores.html">Proveedores</a>
-                <a class="button button_black" href="../inventarios/inventario.html">Inventario</a>
-            </div>
-            <div class="columna" style="max-width: 160px;">
-                <div class="avatar">
-                    <img class="logo" src="../../image/isotipo.png" alt="logo">
-                </div>
-                <div style="max-width: 80px;">Tecnico TI</div>
-            </div>
-        </div>
-        <div style="padding-top: 10px"></div>
-        <div class="contenido">
-            CONTENIDOS
-        </div>
-    </body>
-</html> 
 
+<head>
+    <title>Mi app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/gpr.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="fila">
+        <div class="columna">
+            <img class="logo" src="../../image/logotipo_peq.png" alt="logo">
+        </div>
+        <div class="columna">
+            <a class="button button_black" href="../../index.html">Home</a>
+            <a class="button button_black button_selected" href="../gestion/gestion_incidentes.html">Gestion de incidentes</a>
+            <a class="button button_black" href="../colaboradores/colaboradores.html">Colaboradores</a>
+            <a class="button button_black" href="../proveedores/proveedores.html">Proveedores</a>
+            <a class="button button_black" href="../inventarios/inventario.html">Inventario</a>
+        </div>
+        <div class="columna" style="max-width: 160px;">
+            <div class="avatar">
+                <img class="imguser" src="../../image/Logo_user.png" alt="imguser">
+            </div>
+            <div style="max-width: 80px;">Tecnico TI</div>
+        </div>
+    </div>
+    <div style="padding-top: 10px"></div>
+    <div style="display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+    border: gray 1px solid;
+    ">
+        <div class="fila" style="width: 100%;">
+            <footer style="width: 100%;">
+                <div style="border:black 1px solid; width: 100%;">
+                    <!-- caja de busqueda y botones -->
+                    <br>
+                    <div style="display: flex; align-items: stretch;
+            justify-content: space-between;
+            padding: 10px;
+            max-width: 1200px;
+            margin: auto;
+            border: gray 1px solid;
+        ">
+                        <div style="margin-top:15px">Mis Tickets abiertos</div>
+                        <div class="topnav">
+                            <input type="text" placeholder="Busqueda..">
+                        </div>
+                    </div>
+
+                    <div class="hscroll">
+                        <table width="100%" border="1" cellspacing="0" cellpadding="6" style="margin-top: 30px;">
+                            <tbody>
+                                <tr>
+                                    <th></th>
+                                    <th>N° Inventario</th>
+                                    <th>Tipo</th>
+                                    <th>Marca</th>
+                                    <th>Modelo</th>
+                                    <th>N° Serial</th>
+                                    <th>Procesador</th>
+                                    <th>Dependencia</th>
+                                    <th>Estado</th>
+                                    <th>Asignado a</th>
+
+
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <i class="ri-eye-line"></i>
+                                        <i class="ri-pencil-line"></i>
+                                        <i class="ri-delete-bin-6-line"></i>
+                                    </td>
+                                    <td>T-001</td>
+                                    <td>PC</td>
+                                    <td>HP</td>
+                                    <td>PP00LS</td>
+                                    <td>0A9LF7G5N</td>
+                                    <td>Core I7</td>
+                                    <td>Jurídico</td>
+                                    <td>asignado</td>
+                                    <td>Andres Salazar</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <i class="ri-eye-line"></i>
+                                        <i class="ri-pencil-line"></i>
+                                        <i class="ri-delete-bin-6-line"></i>
+                                    </td>
+                                    <td>T-001</td>
+                                    <td>PC</td>
+                                    <td>HP</td>
+                                    <td>PP00LS</td>
+                                    <td>0A9LF7G5N</td>
+                                    <td>Core I7</td>
+                                    <td>Jurídico</td>
+                                    <td>asignado</td>
+                                    <td>Andres Salazar</td>
+                                </tr>
+
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <i class="ri-eye-line"></i>
+                                        <i class="ri-pencil-line"></i>
+                                        <i class="ri-delete-bin-6-line"></i>
+                                    </td>
+                                    <td>T-001</td>
+                                    <td>PC</td>
+                                    <td>HP</td>
+                                    <td>PP00LS</td>
+                                    <td>0A9LF7G5N</td>
+                                    <td>Core I7</td>
+                                    <td>Jurídico</td>
+                                    <td>asignado</td>
+                                    <td>Andres Salazar</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="topnav">
+                            <a class="exportar" href="#">Historio atención</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="border:black 1px solid; width: 100%;">
+                    <!-- caja de busqueda y botones -->
+                    <br>
+                    <div style="display: flex; align-items: stretch;
+            justify-content: space-between;
+            padding: 10px;
+            max-width: 1200px;
+            margin: auto;
+            border: gray 1px solid;
+        ">
+                        <div style="margin-top:15px">Tickets sin asignar</div>
+                        <div class="topnav">
+                            <input type="text" placeholder="Busqueda..">
+                        </div>
+                    </div>
+
+                    <div class="hscroll">
+                        <table width="100%" border="1" cellspacing="0" cellpadding="6" style="margin-top: 30px;">
+                            <tbody>
+                                <tr>
+                                    <th></th>
+                                    <th>N° Inventario</th>
+                                    <th>Tipo</th>
+                                    <th>Marca</th>
+                                    <th>Modelo</th>
+                                    <th>N° Serial</th>
+                                    <th>Procesador</th>
+                                    <th>Dependencia</th>
+                                    <th>Estado</th>
+                                    <th>Asignado a</th>
+
+
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <i class="ri-eye-line"></i>
+                                        <i class="ri-pencil-line"></i>
+                                        <i class="ri-delete-bin-6-line"></i>
+                                    </td>
+                                    <td>T-001</td>
+                                    <td>PC</td>
+                                    <td>HP</td>
+                                    <td>PP00LS</td>
+                                    <td>0A9LF7G5N</td>
+                                    <td>Core I7</td>
+                                    <td>Jurídico</td>
+                                    <td>asignado</td>
+                                    <td>Andres Salazar</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <i class="ri-eye-line"></i>
+                                        <i class="ri-pencil-line"></i>
+                                        <i class="ri-delete-bin-6-line"></i>
+                                    </td>
+                                    <td>T-001</td>
+                                    <td>PC</td>
+                                    <td>HP</td>
+                                    <td>PP00LS</td>
+                                    <td>0A9LF7G5N</td>
+                                    <td>Core I7</td>
+                                    <td>Jurídico</td>
+                                    <td>asignado</td>
+                                    <td>Andres Salazar</td>
+                                </tr>
+
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <i class="ri-eye-line"></i>
+                                        <i class="ri-pencil-line"></i>
+                                        <i class="ri-delete-bin-6-line"></i>
+                                    </td>
+                                    <td>T-001</td>
+                                    <td>PC</td>
+                                    <td>HP</td>
+                                    <td>PP00LS</td>
+                                    <td>0A9LF7G5N</td>
+                                    <td>Core I7</td>
+                                    <td>Jurídico</td>
+                                    <td>asignado</td>
+                                    <td>Andres Salazar</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="fila">
+        <footer>
+            <div class="fila">
+                <img src="../../image/fb-logo.png" width="40" height="30" <a href="#" style="padding-right: 15px;"></a>
+                <img src="../../image/Ig-logo.png" width="30" height="30" <a href="#" style="padding-right: 15px;"></a>
+                <img src="../../image/Tw-logo.png" width="30" height="35" <a href="#" style="padding-right: 15px;"></a>
+            </div>
+            <div class="fila">
+                <b>Gestion Procesos y Resultados - Todos los derechos reservados     - </b>
+                <p> <b>Contacto:</b> +57 30012345678 / <b>Correo:</b> contacto@grp.com </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

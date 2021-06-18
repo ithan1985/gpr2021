@@ -1,72 +1,188 @@
 <html>
-    <head>
-        <title>Mi app</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../css/gpr.css">
-    </head>
-    <body>
-        <div class="fila">
-            <div class="columna">
-                <img class="logo" src="../../image/isotipo.png" alt="logo">
-            </div>
-            <div class="columna">
-                <a class="button button_black" href="../../index.html">Home</a>
-                <a class="button button_black" href="../gestion/gestion_incidentes.html">Gestion de incidentes</a>
-                <a class="button button_black" href="../colaboradores/colaboradores.html">Colaboradores</a>
-                <a class="button button_black" href="../proveedores/proveedores.html">Proveedores</a>
-                <a class="button button_black button_selected" href="../inventarios/inventario.html">Inventario</a>
-            </div>
-            <div class="columna" style="max-width: 160px;">
-                <div class="avatar">
-                    <img class="logo" src="../../image/isotipo.png" alt="logo">
-                </div>
-                <div style="max-width: 80px;">Tecnico TI</div>
-            </div>
-        </div>
-        <div style="padding-top: 10px"></div>
-        <div class="contenido">
-            <div style="border:red 1px solid; width: 30%; margin-right: 10px; display: grid;
-    align-items: center;
-    justify-content: center;">
-                <div class="filtros">
-                    <select id="cars" name="cars">
-                      <option value="volvo">Filtros</option>
-                    </select>
-                </div>  
-                <div class="filtros">
-                    <select id="cars" name="cars">
-                      <option value="1">Dependencia</option>
-                    </select>
-                </div>  
-                <div class="filtros">
-                    <div>
-                        <input type="checkbox">Administrativo
-                    </div>
-                    <div>  
-                        <input type="checkbox">Operativo
-                    </div>  
-                    <div>
-                        <input type="checkbox">Juridico
-                    </div>  
-                </div>  
-                <div>
-                    
-                </div>  
-                <div>
-                    
-                </div>  
-                <div>
-                    
-                </div>  
-                <div>
-                    
-                </div>  
-            </div>
-            <div style="border:red 1px solid; width: 70%;">
-                contenido
-            </div>
-        </div>
-    </body>
-</html> 
 
+<head>
+    <title>Mi app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/gpr.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="fila">
+        <div class="columna">
+            <img class="logo" src="../../image/logotipo_peq.png" alt="logo">
+        </div>
+        <div class="columna">
+            <a class="button button_black" href="../../index.html">Home</a>
+            <a class="button button_black" href="../gestion/gestion_incidentes.html">Gestion de incidentes</a>
+            <a class="button button_black" href="../colaboradores/colaboradores.html">Colaboradores</a>
+            <a class="button button_black" href="../proveedores/proveedores.html">Proveedores</a>
+            <a class="button button_black button_selected" href="../inventarios/inventario.html">Inventario</a>
+        </div>
+        <div class="columna" style="max-width: 160px;">
+            <div class="avatar">
+                <img class="imguser" src="../../image/Logo_user.png" alt="imguser">
+            </div>
+            <div style="max-width: 80px;">Tecnico TI</div>
+        </div>
+    </div>
+    <div style="padding-top: 10px"></div>
+    <div class="contenido">
+        <div style="border:black 1px solid; width: 30%; margin-right: 10px; display: grid; align-items: center; justify-content: center;">
+            <div class="encabezadocol"><b>Selectores</b></div>
+            <div class="tcentrado"><b>Dependencia</b></div>
+            <div class="filtros">
+                <div>
+                    <input type="checkbox">Administrativo
+                </div>
+                <div>
+                    <input type="checkbox">Operativo
+                </div>
+                <div>
+                    <input type="checkbox">Juridico
+                </div>
+            </div>
+            <div class="tcentrado"><b>Estado</b></div>
+
+            <div>
+                <div class="filtros">
+                    <div>
+                        <input type="checkbox">Asignado
+                    </div>
+                    <div>
+                        <input type="checkbox">Disponible
+                    </div>
+
+                </div>
+            </div>
+            <div class="tcentrado"><b>Tipo</b></div>
+
+            <div>
+                <div class="filtros">
+                    <div>
+                        <input type="checkbox">Computador de escritorio
+                    </div>
+                    <div>
+                        <input type="checkbox">AIO
+                    </div>
+                    <div>
+                        <input type="checkbox">Telefono
+                    </div>
+                    <div>
+                        <input type="checkbox">Diadema
+                    </div>
+                    <div>
+                        <input type="checkbox">Celular
+                    </div>
+
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div style="border:black 1px solid; width: 70%;">
+            <!-- caja de busqueda y botones -->
+            <br>
+            <div class="topnav">
+                <a class="exportar" href="#">Exportar</a>
+                <a href="#">Asignar Inventario</a>
+                <a href="#">Agregar Inventario</a>
+                <input type="text" placeholder="Busqueda..">
+            </div>
+
+            <div class="hscroll">
+                <table width="100%" border="1" cellspacing="0" cellpadding="6" style="margin-top: 30px;">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>N° Inventario</th>
+                            <th>Tipo</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>N° Serial</th>
+                            <th>Procesador</th>
+                            <th>Dependencia</th>
+                            <th>Estado</th>
+                            <th>Asignado a</th>
+
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">
+                                <i class="ri-eye-line"></i>
+                                <i class="ri-pencil-line"></i>
+                                <i class="ri-delete-bin-6-line"></i>
+                            </td>
+                            <td>T-001</td>
+                            <td>PC</td>
+                            <td>HP</td>
+                            <td>PP00LS</td>
+                            <td>0A9LF7G5N</td>
+                            <td>Core I7</td>
+                            <td>Jurídico</td>
+                            <td>asignado</td>
+                            <td>Andres Salazar</td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: center;">
+                                <i class="ri-eye-line"></i>
+                                <i class="ri-pencil-line"></i>
+                                <i class="ri-delete-bin-6-line"></i>
+                            </td>
+                            <td>T-001</td>
+                            <td>PC</td>
+                            <td>HP</td>
+                            <td>PP00LS</td>
+                            <td>0A9LF7G5N</td>
+                            <td>Core I7</td>
+                            <td>Jurídico</td>
+                            <td>asignado</td>
+                            <td>Andres Salazar</td>
+                        </tr>
+
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">
+                                <i class="ri-eye-line"></i>
+                                <i class="ri-pencil-line"></i>
+                                <i class="ri-delete-bin-6-line"></i>
+                            </td>
+                            <td>T-001</td>
+                            <td>PC</td>
+                            <td>HP</td>
+                            <td>PP00LS</td>
+                            <td>0A9LF7G5N</td>
+                            <td>Core I7</td>
+                            <td>Jurídico</td>
+                            <td>asignado</td>
+                            <td>Andres Salazar</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <div class="fila">
+        <footer>
+            <div class="fila">
+                <img src="../../image/fb-logo.png" width="40" height="30" <a href="#" style="padding-right: 15px;"></a>
+                <img src="../../image/Ig-logo.png" width="30" height="30" <a href="#" style="padding-right: 15px;"></a>
+                <img src="../../image/Tw-logo.png" width="30" height="35" <a href="#" style="padding-right: 15px;"></a>
+            </div>
+            <div class="fila">
+                <b>Gestion Procesos y Resultados - Todos los derechos reservados     - </b>
+                <p> <b>Contacto:</b> +57 30012345678 / <b>Correo:</b> contacto@grp.com </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

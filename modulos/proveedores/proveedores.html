@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/gpr.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,8 +17,8 @@
         <div class="columna">
             <a class="button button_black" href="../../index.html">Home</a>
             <a class="button button_black" href="../gestion/gestion_incidentes.html">Gestion de incidentes</a>
-            <a class="button button_black button_selected" href="../colaboradores/colaboradores.html">Colaboradores</a>
-            <a class="button button_black" href="../proveedores/proveedores.html">Proveedores</a>
+            <a class="button button_black" href="../colaboradores/colaboradores.html">Colaboradores</a>
+            <a class="button button_black button_selected" href="../proveedores/proveedores.html">Proveedores</a>
             <a class="button button_black" href="../inventarios/inventario.html">Inventario</a>
         </div>
         <div class="columna" style="max-width: 160px;">
@@ -30,33 +31,19 @@
     <div style="padding-top: 10px"></div>
     <div class="contenido">
         <div style="border:black 1px solid; width: 30%; margin-right: 10px; display: grid; align-items: center; justify-content: center;">
-            <div class="encabezadocol"><b>Selectores</b></div>
-            <div class="tcentrado"><b>Dependencia</b></div>
-            <div class="filtros">
-                <div>
-                    <input type="checkbox">Administrativo
-                </div>
-                <div>
-                    <input type="checkbox">Operativo
-                </div>
-                <div>
-                    <input type="checkbox">Juridico
-                </div>
-            </div>
             <div class="tcentrado"><b>Estado</b></div>
 
             <div>
                 <div class="filtros">
                     <div>
-                        <input type="checkbox">Asignado
+                        <input type="checkbox">Activo
                     </div>
                     <div>
-                        <input type="checkbox">Disponible
+                        <input type="checkbox">Inactivo
                     </div>
 
                 </div>
             </div>
-
             <div>
 
             </div>
@@ -69,8 +56,10 @@
             <br>
             <div class="topnav">
                 <a class="exportar" href="#">Exportar</a>
-                <a href="#">Agregar Colaborador</a>
-                <input type="text" placeholder="Busqueda..">
+                <a href="#">Solicitudes</a>
+                <a href="#">Actualziar  Proveedor</a>
+                <a href="#">Agregar Proveedor</a>
+                <input type="text" placeholder="Busqueda.." style="width: 200px;">
             </div>
 
             <div class="hscroll">
@@ -87,7 +76,6 @@
                             <th>Dependencia</th>
                             <th>Estado</th>
                             <th>Asignado a</th>
-
 
                         </tr>
                         <tr>
@@ -161,6 +149,8 @@
             </div>
         </footer>
     </div>
+
+
 </body>
 
 </html>
